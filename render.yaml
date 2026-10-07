@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bybit-frankfurt-check-mikhail
+    runtime: node
+    region: frankfurt
+    plan: free
+    autoDeployTrigger: off
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /health
